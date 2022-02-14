@@ -1,0 +1,336 @@
+/*------------componentes en crudo-------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: grid;
+    height: 100vh;
+}
+
+    
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+h1{
+    font-weight: 300;
+}
+
+/*----cont1-*/
+
+.Cont1 {
+    background-color: #f8ab0c;
+    padding: 1rem;
+    width: 50vw;
+    height: 100vh;
+    grid-row: span 2;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.Ctitulo1{
+    width: 15rem;
+    width: 20rem;
+    font-size: 5rem;
+}
+
+.Ctitulo1 h1{
+    font-size: 5rem;
+    font-weight: 500;
+
+}
+
+.Ccontenedor1{
+    display: flex;
+    height: 7rem;
+    width: max-content;
+    font-size: 0.8rem ;
+    margin-top: 18rem; 
+    margin-left: 5rem ; 
+    position: absolute; 
+    
+}
+/*--------tarjetas contenedor 1---*/
+.tarjeta{
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+[class*="lado"]{
+    width: 6rem;
+    height: 6rem;
+    border-radius: .3rem;
+    backface-visibility: hidden;
+    transition: transform 1s;
+    overflow: hidden;
+}
+
+.lado-A{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    background-color: #f0e4cc;
+}
+
+.lado-A h2{
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width:  75%;
+
+}
+
+.lado-B{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: .3rem ;
+}
+
+.lado-B p{
+    height: fit-content;
+    text-align: center;
+    color: #f0e4cc;
+    font-size: 0.1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+.lado-B{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.tarjeta:hover .lado-A{
+    transform: rotateY(180deg);
+}
+
+.tarjeta:hover .lado-B{
+    transform: rotateY(360deg);
+    transform: scale(2.5);
+}
+
+
+
+/*-------cont2-*/
+.Cont2 {
+    background-color: #a4d2af;
+    padding: 1rem;
+    height: 50vh;
+    display: block;
+}
+
+.Ctitulo2{
+    font-size: 1.5rem;
+    width: 20rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+.Cparrafo2{
+    width: 30rem;
+    font-size: 1rem ;
+    margin: 1rem auto;
+}
+
+/*----------Cont3-*/
+
+.Cont3 {
+    background-color: rgba(223, 226, 226, 0.89);
+    height: 50vh;
+    display: block;
+    overflow: hidden;
+
+
+}
+
+.Ctitulo3{
+    width: 20rem;
+    margin: 1rem;
+
+}
+
+
+.Cont3 h1{
+    font-size: 1.5rem;
+
+}
+
+.Ch3contenedor{
+    padding: 0.1rem;
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+    height: 70%;
+    width: 90%;
+    margin-inline:  auto;
+}
+
+
+.Ch3Item {
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+
+.Ch3Item:hover {
+    transform: scale(1.05);
+    border-radius: .5rem;
+
+
+}
+
+
+.Ch3Item img{
+    max-width: 100%;
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
+
+.Ch3Item:hover img{
+    filter: grayscale(0%);
+    transform: scale(2.5);
+    justify-content: center;
+}
+
+.Ch3Item:hover{
+    filter: grayscale(0%);
+    transform: scale(1.5);
+    justify-content: center;
+    z-index: 100;
+
+}
+
+/*-----contenedor4*/
+.Cont4 {
+    background-color: #e6b045;
+    padding: 1rem;
+    width: 50vw;
+    grid-row: span 1;
+    display: flex;
+    
+}
+
+.Cparrafo4{
+    width: 20rem;
+    font-size: 1rem;
+    margin-top: 9rem;
+}
+
+.Ctitulo4{
+    width: 20rem;
+    font-size: 5rem;
+}
+
+.Ctitulo4 h1{
+    font-size: 5rem;
+    font-weight: 500;
+
+}
+
+.Ccontenedor4{
+    display: flex;
+    height: 7rem;
+    width: max-content;
+    font-size: 0.8rem ;
+    margin-top: 18rem; 
+    margin-left: 5rem ; 
+    position: absolute; 
+    
+}
+
+/*-------cont5-*/
+.Cont5 {
+    background-color: #e6b045;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Cimagen5 img{
+    max-width: 100%;
+    padding: 3rem;
+}
+
+
+/*----------Cont6-*/
+
+.Cont6 {
+    background-color: #e6b045;
+    padding: 1rem;
+    grid-row: span 1;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.Cparrafo6{
+    width: 20rem;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.Ctitulo6{
+    width: 15rem;
+}
+
+.Ctitulo6 h1{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+
+
+
+/*----------Cont7-*/
+
+.Cont7 {
+    background-color: #e6b045;
+    padding: 1rem;
+    grid-row: span 1;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Cparrafo7{
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.Ctitulo7{
+    width: 15rem;
+}
+
+.Ctitulo7 h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+
+}
+

@@ -11,6 +11,7 @@
 body{
     display: grid;
     height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
 }
     
 body{
@@ -60,7 +61,6 @@ h1{
     display: flex;
     height: 7rem;
     width: max-content;
-    font-size: 0.8rem ;
     margin-top: 18rem; 
     margin-left: 5rem ; 
     position: absolute; 
@@ -113,7 +113,7 @@ h1{
     height: fit-content;
     text-align: center;
     color: #f0e4cc;
-    font-size: 0.1rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -166,7 +166,7 @@ h1{
     
     
     .lado-B p{
-        font-size: 0.01rem;
+        font-size: 0.6rem;
         font-weight: 400;
     }
     
@@ -650,7 +650,7 @@ h1{
     height: fit-content;
     text-align: center;
     color: #f0e4cc;
-    font-size: 0.1rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -710,7 +710,7 @@ h1{
     
     
     .lado8-B p{
-        font-size: 0.01rem;
+        font-size: 0.5rem;
         font-weight: 400;
     }
     

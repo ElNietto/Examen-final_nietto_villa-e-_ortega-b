@@ -141,7 +141,7 @@ h1{
 @media screen and ( max-width: 520px){
     
     .Cont1 {
-        width: 1000vw;
+        width: 100vw;
         height: 50vh;
         
     }
@@ -192,6 +192,7 @@ h1{
 
 
 
+
 /*-------cont2-*/
 .Cont2 {
     background-color: #7fbe67;
@@ -217,6 +218,9 @@ h1{
 
 
 /*------------ media enquires Cont2*/
+
+
+
 
 
 @media screen and ( max-width: 520px){
@@ -674,7 +678,7 @@ h1{
 @media screen and ( max-width: 520px){
     
     .Cont8 {
-        width: 1000vw;
+        width: 100vw;
         height: 50vh;
         
     }
